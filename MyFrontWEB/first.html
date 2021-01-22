@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제목</title>        
+    </head>
+    <body>
+        <h1 id="first">WELCOME!</h1> 
+        <hr>
+        <h6>My </h6>Web World
+        <p id="second" 
+        style="border: 1px; border-style: solid; border-color:hotpink; width: 300px;">HTML, SS, JS는 FrontEnd기술입니다
+            <br> HTML은 데이터
+            <br> CSS는 표현
+            <br> JS는 기능 
+        </p>
+        <p id="third">
+            <h3>JSP, Servlet은 BackEnd기술입니다</h3>
+            JSP는 JavaServerPage로써 ASP와 비슷<br>
+            Servlet은 Java언어 기반이다
+        </p>
+
+        <p>
+            <a href="http://www.naver.com">네이버</a>&nbsp;&nbsp;&nbsp;
+            <a href="http://www.daum.net">다음</a>
+            <a href="http://www.google.com">구글</a>
+            <hr>
+            <a href="./sub.html">SUB</a><!-- 상대경로활용 : . 현재경로, ..상위경로 -->
+            <hr>
+            <a href="#first">TOP</a>&nbsp;&nbsp;&nbsp;
+            <a href="#second">FrontEnd</a>&nbsp;&nbsp;&nbsp;
+            <a href="#third">BACK END</a>
+        </p>
+
+        <p>
+            <ol> <!--순서를 갖는 태그-->
+                <li>아반떼</li>
+                <li>소나타</li>
+                <li>그랜져</li>
+            </ol>
+
+            <ul> <!--순서를 갖지 않는 태그-->
+                <li>아반떼</li>
+                <li>소나타</li>
+                <li>그랜져</li>
+            </ul>
+        </p>
+
+        <p>
+            <table border="1" width="800" height="700"><!--표-->
+                <!--thead, tbody, tfoot는 의미를 갖고 있어서 위치를 변경해도 기능이 유지된다.-->
+                <!-- <thead> -->
+                    <tr> <!--행-->
+                        <td>상품번호</td><td>상품명</td><td>가격</td> <!--열-->
+                    </tr>
+                <!-- </thead> -->
+
+                <!-- <tbody> -->
+                    <!--머리말-->
+                    <tr>
+                        <td>1번</td><td>아메리카노</td><td>1,000원</td>
+                    </tr>
+                    <tr>
+                        <td>2번</td><td>라떼는말야</td><td>1,500원</td>
+                    </tr>
+                    <tr>
+                        <td>3번</td><td>밀크티</td><td>2,500원</td>
+                    </tr>
+                    <tr>
+                        <td>4번</td><td>캐모마일</td><td>4,000원</td>
+                    </tr>
+                    <tr>
+                        <td  rowspan="2">5번</td><td>오렌지주스</td><td>2,000원</td>
+                    </tr>
+                    <tr>
+                                     <td>오렌지주스, 얼음추가</td><td>3,000원</td>
+                    </tr>
+                <!-- </tbody> -->
+
+                <!-- <tfoot>꼬리말 -->
+                    <tr>
+                        <!-- <td></td><td></td><td>총액: 9,000원</td> -->
+                        <td colspan="3">총액: 9,000원</td> <!--colspan 은 열 합치기-->
+                    </tr>
+                <!-- </tfoot> -->
+            </table>
+        </p>
+
+        <p>
+            <img src="./images/image.jpg" alt="그림">
+            <img src="./images/image.jpg" alt="큰그림"
+            width="200px"
+            height="300">
+            <img src="./images/image.jpg" alt="그림"
+            width="200px"><br>
+            <img src="https://movie-phinf.pstatic.net/20210111_224/1610340055083NT05z_JPEG/movie_image.jpg" alt="귀멸의 칼날">
+
+        </p>
+
+
+
+
+    </body>
+</html>
