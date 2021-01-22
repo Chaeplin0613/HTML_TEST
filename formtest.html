@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>입력양식 실습</title>
+    </head>
+
+    <body>
+        <form method="GET" action="http://www.naver.com"> <!--<form>과 같음 기본속성이 get이기 때문 / 제출버튼을 눌렀을때 이동할 url--> 
+            <label>text:         <input type="text" name="t" value="test"></label><br> <!--input의 기본속성값은 text이다.-->
+            <label></label><label></label><label>password:     <input type="password" name="p" value="p"></label><br><br>
+
+            <fieldset style="border-color: lightcoral;">
+                <legend>다중선택</legend> <!--legend는 fieldset의 타이틀 역할-->
+                <label><input type="checkbox" name="c" value="c1"> ONE &nbsp;&nbsp;</label>
+                <label><input type="checkbox" name="c" value="c2"> TWO &nbsp;&nbsp;</label>
+                <label><input type="checkbox" name="c" value="c3" checked> THREE &nbsp;&nbsp;</label>
+            </fieldset>
+            
+            <fieldset style="border-color: lawngreen;">
+                <legend>단일선택</legend>
+                <label><input type="radio" name="r" value="r1">ONE &nbsp;&nbsp;</label>
+                <label><input type="radio" name="r" value="r2">TWO &nbsp;&nbsp;</label>
+                <label><input type="radio" name="r" value="r3" checked>THREE &nbsp;&nbsp;</label>
+            </fieldset>
+            <br>
+            <input type="hidden" name="h" value="hvalue">
+
+            <select>
+                <option>ONE</option>
+                <option>TWO</option>
+                <option selected>THREE</option>
+            </select>
+
+<textarea rows="3" cols="10"> <!--3행에 10글자를 기본으로 표현, 영어 기준임-->
+ABCDEFGHIJKLMNO
+PQRSTUVWXYZ
+</textarea>
+
+            <input type="submit">
+        </form>
+
+        <hr>
+        <h1>HTML5에서 제공하는 TYPE속성값들 </h1>
+        <form >
+            <input type="number" value="5" step="3"> <!--휴대폰에서는 숫자 키패드가 보임, step 3씩 증가시킴-->
+            <input type="tel" value="010-1234-5678"> <!--전화번호 입력하기 편한 키패드가 보임-->
+            <input type="search"> <!--작은 디바이스에서 값을 쉽게 지울 수 있도록 x버튼을 보여줌-->
+            <input type="date" value="1991-01-01"> <!--날짜를 제공함-->
+            <input type="range" value="25"> <!--범위막대-->
+            <input type="url" value="http://www.naver.com"> 
+        </form>
+
+    </body>
+</html>
